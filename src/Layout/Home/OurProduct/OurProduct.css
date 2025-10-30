@@ -1,0 +1,17 @@
+.ourproduct>.swiper-pagination1 {
+    margin-top: 50px;
+    position: relative;
+}
+
+.ourproduct>.swiper-pagination1 .swiper-pagination-bullet {
+    background: #DEBCD74D;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+}
+
+.ourproduct>.swiper-pagination1 .swiper-pagination-bullet-active {
+    background: #9C458B;
+    border-radius: 20px;
+    width: 25px;
+}

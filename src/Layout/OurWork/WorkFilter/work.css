@@ -1,0 +1,8 @@
+.widthclass:nth-child(2),
+.widthclass:nth-child(3),
+.widthclass:nth-child(6),
+.widthclass:nth-child(7),
+.widthclass:nth-child(10),
+.widthclass:nth-child(11) {
+    background-color: blue;
+}

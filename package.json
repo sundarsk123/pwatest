@@ -1,0 +1,31 @@
+{
+  "name": "artisticks",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "framer-motion": "^12.23.12",
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.11",
+    "mapbox-gl": "^3.14.0",
+    "next": "^15.5.2",
+    "react": "19.1.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "19.1.0",
+    "react-intersection-observer": "^9.16.0",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.5",
+    "tailwindcss": "^4"
+  }
+}

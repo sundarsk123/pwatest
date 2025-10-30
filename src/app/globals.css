@@ -1,0 +1,260 @@
+@import "tailwindcss";
+
+
+@media (min-width : 1600px) {
+  :root {
+    --size: 870;
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --font-tan-pearl: 'TanPearl';
+  --font-Satoshi-Light: 'Satoshi-Light';
+  --font-Satoshi-Regular: 'Satoshi-Regular';
+  --font-Satoshi-Medium: 'Satoshi-Medium';
+  --font-Satoshi-Bold: 'Satoshi-Bold';
+  --font-Miami-Sunday : 'MiamiSunday';
+}
+
+html {
+  font-size: calc(9 * 100vw / var(--size)) !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-Satoshi-Regular);
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-tan-pearl);
+  line-height: 1.2;
+}
+
+.font-MiamiSunday{
+  font-family: var(--font-Miami-Sunday)!important;
+}
+
+.font-tan-pearl {
+  font-family: var(--font-tan-pearl)!important;
+}
+
+.font-300 {
+  font-family: var(--font-Satoshi-Light);
+}
+
+.font-500 {
+  font-family: var(--font-Satoshi-Medium);
+}
+
+.font-700 {
+  font-family: var(--font-Satoshi-Bold);
+}
+
+.btn--liquidBtn {
+  position: relative;
+  cursor: pointer;
+  color: #9C458B; /* default text color */
+}
+
+.btn--liquidBtn:hover {
+  color: white; /* text turns white when liquid rises */
+}
+
+.btn--liquidBtn:hover svg rect {
+  fill: white; /* dot turns white */
+}
+
+.btn--liquidBtn:hover .btn--liquidBtn--liquid {
+  top: -120px;
+}
+
+.btn--liquidBtn--liquid {
+  position: absolute!important;
+  top: 0rem;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #9C458B; /* liquid fill color */
+  box-shadow: inset 0 0 50px #9C458B!important;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.btn--liquidBtn--liquid::before,
+.btn--liquidBtn--liquid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -75%);
+}
+
+.btn--liquidBtn--liquid::before {
+  border-radius: 45%;
+  background: #fff!important;
+  animation: liquidAnimation 10s linear infinite;
+}
+
+.btn--liquidBtn--liquid::after {
+  border-radius: 40%;
+  background: #fff!important;
+  animation: liquidAnimation 10s linear infinite;
+}
+
+@keyframes liquidAnimation {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+
+
+/* Loading Spinner */
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #FFF #FFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #FFF #FFF transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+.btn--liquidBtn1 {
+  position: relative;
+  cursor: pointer;
+  color: #9C458B;
+  border: #9C458B 1px solid; /* default text color */
+}
+
+.btn--liquidBtn1:hover {
+  color: white; /* text turns white when liquid rises */
+}
+
+.btn--liquidBtn1:hover svg rect {
+  fill: white; /* dot turns white */
+}
+
+.btn--liquidBtn1:hover .btn--liquidBtn--liquid {
+  top: -120px;
+}
+
+.btn--liquidBtn--liquid {
+  position: absolute!important;
+  top: 0rem;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #9C458B; /* liquid fill color */
+  box-shadow: inset 0 0 50px #9C458B!important;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.btn--liquidBtn--liquid::before,
+.btn--liquidBtn--liquid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -75%);
+}
+
+.btn--liquidBtn--liquid::before {
+  border-radius: 45%;
+  background: #fff!important;
+  animation: liquidAnimation 10s linear infinite;
+}
+
+.btn--liquidBtn--liquid::after {
+  border-radius: 40%;
+  background: #fff!important;
+  animation: liquidAnimation 10s linear infinite;
+}
+
+@keyframes liquidAnimation {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+.mapboxgl-ctrl-attrib-inner{
+  display: none!important;
+}
+
+.mapboxgl-ctrl-bottom-left{
+  display: none!important;
+}
+
+.mapboxgl-ctrl{
+  display: none!important;
+}
+
+.para p{
+  padding-top: 15px;
+}

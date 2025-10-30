@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'TanPearl';
+    src: url("/Font/tan-pearl-font/tan-pearl.otf") format("opentype");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url('/Font/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf') format('opentype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('/Font/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('/Font/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('/Font/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MiamiSunday';
+  src: url('/Font/miami_sunday/MiamiSunday.otf') format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
