@@ -5,6 +5,7 @@ const withPWA = withPWAInit({
   dest: 'public',
   register: true,
   skipWaiting: true,
+  maximumFileSizeToCacheInBytes: 50 * 1024 * 1024, // allow up to 50MB
   disable: process.env.NODE_ENV === 'development', // disable in dev
 });
 
